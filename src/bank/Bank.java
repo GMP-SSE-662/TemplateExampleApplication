@@ -25,11 +25,13 @@ public abstract class Bank {
     abstract void handleFee();
 
     void handleRewards() {
-        System.out.println("Sorry, we don't offer rewards member benefits at this location.");
+        System.out.println("Sorry, we don't offer rewards member" +
+                "benefits at this location.");
     }
 
     private void notifyClient(int requiredAmount) {
         System.out.println(String.format("You asked for: %s", requiredAmount));
-        System.out.println(String.format("Total withdrawn after fee: %s", amountFromAccount + requiredAmount));
+        System.out.println(String.format("Total withdrawn after fee: %s",
+                amountFromAccount + requiredAmount));
     }
 }

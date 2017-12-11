@@ -8,7 +8,8 @@ public class NativeCityBank extends Bank {
 
     @Override
     void handleRewards() {
-        System.out.println("We do have a rewards program! You saved $2!");
+        System.out.println("We do have a rewards program!" +
+                "You saved $2!");
         amountFromAccount -= 2;
     }
 }
