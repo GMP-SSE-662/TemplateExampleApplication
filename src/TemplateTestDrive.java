@@ -1,5 +1,5 @@
 import bank.*;
-import bank.Client;
+import client.Client;
 
 public class TemplateTestDrive {
 

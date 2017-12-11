@@ -1,4 +1,4 @@
-package bank;
+package client;
 
 public class Client {
     private boolean rewardsMember;

@@ -1,5 +1,7 @@
 package bank;
 
+import client.Client;
+
 public abstract class Bank {
 
     int amountFromAccount;
@@ -12,7 +14,7 @@ public abstract class Bank {
      *          of his/her bank account, including the withdrawn
      *          amount.
      */
-    public final void performWithdrawal(bank.Client client, int requiredAmount) {
+    public final void performWithdrawal(Client client, int requiredAmount) {
         amountFromAccount = 0;
         if (client.isRewardsMember())
             handleRewards();
